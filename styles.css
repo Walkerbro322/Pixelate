@@ -36,24 +36,42 @@ header h1 {
   background-color: #111;
 }
 .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   margin-top: 30px;
 }
+
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 5px;
-  border: none;
-}
-.contact-form button {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #A020F0;
+  background-color: #222;
   color: #fff;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form button {
+  background-color: #A020F0;
+  color: white;
   border: none;
+  padding: 12px;
+  font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #8a1bcc;
+}
 }
 .quote-button {
   display: inline-block;
